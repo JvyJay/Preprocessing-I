@@ -130,15 +130,15 @@ table {
 * {
   box-sizing: border-box;
 }
-div,
+/*div,
 section,
 p {
-  border: 1px solid grey;
-}
+	border: 1px solid grey;
+}*/
 html,
 body {
   height: 100%;
-  background: #393939;
+  background: #181a1b;
 }
 /* General Styles */
 h1,
@@ -329,6 +329,6 @@ header {
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 40px 0 40px 0;
   color: white;
 }
