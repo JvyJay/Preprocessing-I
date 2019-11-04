@@ -1,1 +1,334 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+div,
+section,
+p {
+  border: 1px solid grey;
+}
+html,
+body {
+  height: 100%;
+  background: #393939;
+}
+/* General Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #464542;
+}
+::-webkit-scrollbar-thumb {
+  background: #515150;
+}
+button {
+  text-transform: uppercase;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.header-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.header-container h1 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 4rem;
+}
+.header-container p {
+  color: white;
+  margin-bottom: 15px;
+}
+.header-container button {
+  background: none;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  border: 0.5px solid #4ef5f0;
+  color: #4ef5f0;
+  border-radius: 15px;
+}
+.header-container button:hover {
+  background: #4ef5f0;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+.header-container span {
+  color: #4ef5f0;
+}
+/* Defeated Monsters */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.about-container h2 {
+  font-size: 2rem;
+  color: #4ef5f0;
+  padding: 40px 0 40px 0;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.card img {
+  width: 50%;
+}
+.card .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .left {
+  text-align: left;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.card .left h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #4ef5f0;
+}
+.card .left p {
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+}
+.card .left button {
+  color: white;
+  background: none;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  border: 0.5px solid #4ef5f0;
+  color: #4ef5f0;
+  border-radius: 15px;
+  width: 25%;
+}
+.card .left button:hover {
+  background: #4ef5f0;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+.card .right {
+  text-align: right;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.card .right h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #4ef5f0;
+}
+.card .right p {
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+}
+.card .right button {
+  color: white;
+  background: none;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  border: 0.5px solid #4ef5f0;
+  color: #4ef5f0;
+  border-radius: 15px;
+  width: 25%;
+}
+.card .right button:hover {
+  background: #4ef5f0;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+/* Contact */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-container .contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact h2 {
+  font-size: 2rem;
+  color: #4ef5f0;
+  padding: 40px 0 40px 0;
+}
+.contact-container .contact p {
+  color: white;
+  padding: 10px 0 10px 0;
+}
+.contact-container .contact p:hover {
+  color: #4ef5f0;
+  transition: 0.2s ease-in-out;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0 20px 0;
+  color: white;
+}
