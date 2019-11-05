@@ -178,7 +178,15 @@ a {
 
 @primary-color: #4ef5f0;
 @secondary-color: #181a1b;
-@transition: 0.2s ease-in-out;
+/*@transition: 0.2s ease-in-out;*/
+
+.white {
+	color: white;
+}
+
+.transition {
+	transition: 0.2s ease-in-out;
+}
 
 button {
 	text-transform: uppercase;
@@ -208,13 +216,13 @@ header {
 
 	a {
 		text-decoration: none;
-		color: white;
+		.color();
 		margin-left: 20px;
 	}
 
 	a:hover {
 		color: @primary-color;
-		transition: @transition;
+		.transition();
 	}
 
 }
@@ -227,13 +235,13 @@ header {
 	text-align: center;
 
 	h1 {
-		color: white;
+		.color();
 		margin-bottom: 5px;
 		font-size: 4rem;
 	}
 
 	p {
-		color: white;
+		.color();
 		margin-bottom: 15px;
 	}
 
@@ -249,7 +257,7 @@ header {
 	button:hover {
 		background: @primary-color;
 		color: black;
-		transition: @transition;
+		.transition();
 	}
 
 	span {
@@ -308,12 +316,12 @@ header {
 		p {
 			margin-bottom: 20px;
 			width: 100%;
-			color: white;
+			.color();
 			font-weight: lighter;
 		}
 
 		button {
-			color: white;
+			.color();
 			background: none;
 			padding: 5px 10px 5px 10px;
 			text-align: center;
@@ -326,7 +334,7 @@ header {
 		button:hover {
 			background: @primary-color;
 			color: black;
-			transition: @transition;
+			.transition();
 		}
 	}
 
@@ -347,12 +355,12 @@ header {
 		p {
 			margin-bottom: 20px;
 			width: 100%;
-			color: white;
+			.color();
 			font-weight: lighter;
 		}
 
 		button {
-			color: white;
+			.color();
 			background: none;
 			padding: 5px 10px 5px 10px;
 			text-align: center;
@@ -365,7 +373,7 @@ header {
 		button:hover {
 			background: @primary-color;
 			color: black;
-			transition: @transition;
+			.transition();
 		}
 	}
 }
@@ -388,13 +396,13 @@ header {
 		}
 
 		p {
-			color: white;
+			.color();
 			padding: 10px 0 10px 0;
 		}
 
 		p:hover {
 			color: @primary-color;
-			transition: @transition;
+			.transition();
 		}
 	}
 }
@@ -403,7 +411,7 @@ header {
 footer {
 	text-align: center;
 	padding: 40px 0 40px 0;
-	color: white;
+	.color();
 }
 
 /* Responsive */
@@ -449,12 +457,12 @@ footer {
 
 		p {
 			margin-bottom: 10px;
-			color: white;
+			.color();
 			font-weight: lighter;
 		}
 
 		button {
-			color: white;
+			.color();
 			background: none;
 			padding: 5px 10px 5px 10px;
 			text-align: center;
@@ -466,7 +474,7 @@ footer {
 		button:hover {
 			background: @primary-color;
 			color: black;
-			transition: @transition;
+			.transition();
 		}
 	}
 
@@ -488,7 +496,7 @@ footer {
 
 	.one:hover {
 		filter: grayscale(0);
-		transition: @transition;
+		.transition();
 	}
 
 	.two {
@@ -509,7 +517,7 @@ footer {
 
 	.two:hover {
 		filter: grayscale(0);
-		transition: @transition;
+		.transition();
 	}
 
 	.three {
@@ -530,6 +538,6 @@ footer {
 
 	.three:hover {
 		filter: grayscale(0);
-		transition: @transition;
+		.transition();
 	}
 }
