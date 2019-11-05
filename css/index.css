@@ -147,7 +147,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
   font-family: 'Montserrat', sans-serif;
 }
 ::-webkit-scrollbar {
@@ -175,6 +176,21 @@ header {
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+.navbar {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+.navbar a:hover {
+  color: #4ef5f0;
+  transition: 0.2s ease-in-out;
 }
 .header-container {
   align-items: center;

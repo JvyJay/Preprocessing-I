@@ -159,7 +159,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+a {
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -177,6 +178,7 @@ p {
 
 @primary-color: #4ef5f0;
 @secondary-color: #181a1b;
+@transition: 0.2s ease-in-out;
 
 button {
 	text-transform: uppercase;
@@ -196,6 +198,25 @@ header {
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
+}
+
+.navbar {
+	display: flex;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+
+	a {
+		text-decoration: none;
+		color: white;
+		margin-left: 20px;
+	}
+
+	a:hover {
+		color: @primary-color;
+		transition: @transition;
+	}
+
 }
 
 .header-container {
@@ -228,7 +249,7 @@ header {
 	button:hover {
 		background: @primary-color;
 		color: black;
-		transition: 0.2s ease-in-out;
+		transition: @transition;
 	}
 
 	span {
@@ -305,7 +326,7 @@ header {
 		button:hover {
 			background: @primary-color;
 			color: black;
-			transition: 0.2s ease-in-out;
+			transition: @transition;
 		}
 	}
 
@@ -344,7 +365,7 @@ header {
 		button:hover {
 			background: @primary-color;
 			color: black;
-			transition: 0.2s ease-in-out;
+			transition: @transition;
 		}
 	}
 }
@@ -373,7 +394,7 @@ header {
 
 		p:hover {
 			color: @primary-color;
-			transition: 0.2s ease-in-out;
+			transition: @transition;
 		}
 	}
 }
@@ -445,7 +466,7 @@ footer {
 		button:hover {
 			background: @primary-color;
 			color: black;
-			transition: 0.2s ease-in-out;
+			transition: @transition;
 		}
 	}
 
@@ -467,7 +488,7 @@ footer {
 
 	.one:hover {
 		filter: grayscale(0);
-		transition: 0.2s ease-in-out
+		transition: @transition;
 	}
 
 	.two {
@@ -488,7 +509,7 @@ footer {
 
 	.two:hover {
 		filter: grayscale(0);
-		transition: 0.2s ease-in-out
+		transition: @transition;
 	}
 
 	.three {
@@ -509,6 +530,6 @@ footer {
 
 	.three:hover {
 		filter: grayscale(0);
-		transition: 0.2s ease-in-out
+		transition: @transition;
 	}
 }
