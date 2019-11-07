@@ -1,1 +1,467 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/*div,
+section,
+p {
+	border: 1px solid grey;
+}*/
+html,
+body {
+  height: 100%;
+  background: #181a1b;
+}
+/* General Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #464542;
+}
+::-webkit-scrollbar-thumb {
+  background: #515150;
+}
+/*@transition: 0.2s ease-in-out;*/
+.transition {
+  transition: 0.2s ease-in-out;
+}
+button {
+  text-transform: uppercase;
+}
+.hidden-container {
+  display: none;
+}
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.navbar {
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+.navbar a:hover {
+  color: #4ef5f0;
+  transition: 0.2s ease-in-out;
+}
+.header-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.header-container h1 {
+  color: white;
+  margin-bottom: 5px;
+  font-size: 4rem;
+}
+.header-container p {
+  color: white;
+  margin-bottom: 15px;
+}
+.header-container button {
+  background: none;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  border: 0.5px solid #4ef5f0;
+  color: #4ef5f0;
+  border-radius: 15px;
+}
+.header-container button:hover {
+  background: #4ef5f0;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+.header-container span {
+  color: #4ef5f0;
+}
+/* Defeated Monsters */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+.about-container h2 {
+  font-size: 2rem;
+  color: #4ef5f0;
+  padding: 40px 0 40px 0;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.card img {
+  width: 50%;
+}
+.card .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card .left {
+  text-align: left;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.card .left h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #4ef5f0;
+}
+.card .left p {
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+}
+.card .left button {
+  color: white;
+  background: none;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  border: 0.5px solid #4ef5f0;
+  color: #4ef5f0;
+  border-radius: 15px;
+  width: 25%;
+}
+.card .left button:hover {
+  background: #4ef5f0;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+.card .right {
+  text-align: right;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.card .right h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #4ef5f0;
+}
+.card .right p {
+  margin-bottom: 20px;
+  width: 100%;
+  color: white;
+  font-weight: lighter;
+}
+.card .right button {
+  color: white;
+  background: none;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  border: 0.5px solid #4ef5f0;
+  color: #4ef5f0;
+  border-radius: 15px;
+  width: 25%;
+}
+.card .right button:hover {
+  background: #4ef5f0;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+/* Contact */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contact-container .contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contact h2 {
+  font-size: 2rem;
+  color: #4ef5f0;
+  padding: 40px 0 40px 0;
+}
+.contact-container .contact p {
+  color: white;
+  padding: 10px 0 10px 0;
+}
+.contact-container .contact p:hover {
+  color: #4ef5f0;
+  transition: 0.2s ease-in-out;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px 0 40px 0;
+  color: white;
+}
+/* Responsive */
+@media screen and (max-width: 1210px) {
+  .about-container {
+    display: none;
+  }
+  .hidden-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .hidden-container h2 {
+    font-size: 2rem;
+    color: #4ef5f0;
+    padding: 40px 0 40px 0;
+  }
+  .sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+  }
+  .textBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    z-index: 9999;
+  }
+  .textBtn h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #4ef5f0;
+  }
+  .textBtn p {
+    margin-bottom: 10px;
+    color: white;
+    font-weight: lighter;
+  }
+  .textBtn button {
+    color: white;
+    background: none;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    border: 0.5px solid #4ef5f0;
+    color: #4ef5f0;
+    border-radius: 15px;
+  }
+  .textBtn button:hover {
+    background: #4ef5f0;
+    color: black;
+    transition: 0.2s ease-in-out;
+  }
+  .one {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/king-ghidorah.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    height: 50vh;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: inline-block;
+    filter: grayscale(100%);
+  }
+  .one:hover {
+    filter: grayscale(0);
+    transition: 0.2s ease-in-out;
+  }
+  .two {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/mothra.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    height: 50vh;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: inline-block;
+    filter: grayscale(100%);
+  }
+  .two:hover {
+    filter: grayscale(0);
+    transition: 0.2s ease-in-out;
+  }
+  .three {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/rodan.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    width: 100%;
+    height: 50vh;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: inline-block;
+    filter: grayscale(100%);
+  }
+  .three:hover {
+    filter: grayscale(0);
+    transition: 0.2s ease-in-out;
+  }
+}
